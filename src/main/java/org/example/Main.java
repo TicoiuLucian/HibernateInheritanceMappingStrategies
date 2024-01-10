@@ -1,7 +1,11 @@
 package org.example;
 
+import org.example.tableperclass.TablePerClassDAO;
+
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+
+    TablePerClassDAO tablePerClassDAO = new TablePerClassDAO();
+    tablePerClassDAO.insertIntoDb();
   }
 }
